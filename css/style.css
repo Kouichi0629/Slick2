@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+/* ------------------------------
+    リセット
+------------------------------ */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body,
+html,
+div,
+p,
+span,
+blockquote,
+table,
+tr,
+th,
+td,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
+footer,
+nav,
+aside,
+section {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  color: inherit;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  overflow-x: hidden;
+  color: #353535;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* ------------------------------
+    ここから
+------------------------------ */
+
+.wrap {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 980px;
+}
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #111;
+}
+header h1 {
+  font-size: 50px;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+/* ここからドロップダウンメニュー */
+section {
+  position: relative;
+}
+nav {
+  width: 100%;
+}
+nav > ul > li {
+  width: 100%;
+}
+nav > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+nav > ul > li:first-child > a {
+  border-top: 1px solid #ccc;
+}
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  width: 192px;
+  z-index: 100;
+}
+nav > ul > li li > a {
+  display: block;
+  width: 100%;
+  padding: 10px 5%;
+  border-bottom: 1px solid #ccc;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  /* nav {
+    margin-top: 50px;
+  } */
+  nav > ul {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+    width: calc(100% / 5);
+    font-size: 1rem;
+    vertical-align: top;
+  }
+  nav > ul > li > a {
+    border: none;
+    border-left: 1px solid #ccc;
+  }
+  nav > ul > li:first-child > a {
+    border-top: none;
+    border-left: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav > ul > li > ul {
+    width: 100%;
+  }
+}
+/* MAIN */
+
+.contents {
+  padding: 40px 0;
+}
+
+.contents h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 2px solid #353535;
+}
+
+.contents_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contents_list li {
+  width: 31%;
+}
+
+.contents_list li h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contents_list li {
+    padding-top: 25px;
+    width: 100%;
+  }
+  .contents_list li:first-child {
+    padding-top: 0;
+  }
+}
+
+/* SLIDER */
+
+.slider img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  padding: 5px 0;
+  text-align: center;
+  background: #afafaf;
+  color: #fff;
+}
+
+/* トップに戻る */
+.totop {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  padding: 8px 15px;
+  font-weight: 700;
+  background: #353535;
+  border-radius: 5px;
+  color: #fff;
+}

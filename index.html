@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- jQuery CDNを一番に書く-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- スリックスライダーの読み込み1　 -->
+    <script src="js/slick.min.js"></script>
+    <!-- <js ２番目に書く---- -->
+    <script src="js/script.js"></script>
+    <!-- ふわっと現れる画像 -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- スリックスライダーの読み込み2　 -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- CSS ３番目に書く -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- ヘッダー -->
+      <header>
+        <h1>Web Meet Sample Site</h1>
+      </header>
+      <section>
+        <nav>
+          <ul>
+            <li>
+              <a href="">nav01</a>
+              <ul>
+                <li><a href="">list01</a></li>
+                <li><a href="">list02</a></li>
+                <li><a href="">list03</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">nav02</a>
+              <ul>
+                <li><a href="">list01</a></li>
+                <li><a href="">list02</a></li>
+                <li><a href="">list03</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">nav03</a>
+              <ul>
+                <li><a href="">list01</a></li>
+                <li><a href="">list02</a></li>
+                <li><a href="">list03</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">nav04</a>
+              <ul>
+                <li><a href="">list01</a></li>
+                <li><a href="">list02</a></li>
+                <li><a href="">list03</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">nav05</a>
+              <ul>
+                <li><a href="">list01</a></li>
+                <li><a href="">list02</a></li>
+                <li><a href="">list03</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <main>
+        <!-- スライダー -->
+        <div class="absolute">
+          <ul id="slider" class="slider">
+            <li><img src="img/beef-img.jpg" alt="サンプル画像" /></li>
+            <li><img src="img/beef-img2.jpg" alt="サンプル画像" /></li>
+            <li><img src="img/beef-img3.jpg" alt="サンプル画像" /></li>
+          </ul>
+        </div>
+
+        <!-- 適当なコンテンツ -->
+        <section class="contents">
+          <div class="container">
+            <h2>Meet Menu</h2>
+            <ul class="contents_list">
+              <li>
+                <h3>Meet Menu 1</h3>
+                <img src="img/beef3.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem, incidunt dicta. Quasi, nobis! Quis distinctio in amet
+                  veritatis nulla quas non voluptatibus aut quisquam blanditiis,
+                  iusto saepe laborum, porro cum.
+                </p>
+              </li>
+              <li>
+                <h3>Meet Menu 2</h3>
+                <img src="img/beef5.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+              <li>
+                <h3>Meet Menu 3</h3>
+                <img src="img/beef6.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 適当なコンテンツ -->
+        <section class="contents">
+          <div class="container">
+            <h2>Meet Menu</h2>
+            <ul class="contents_list">
+              <li>
+                <h3>Meet Menu 4</h3>
+                <img src="img/beef8.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+              <li>
+                <h3>Meet Menu 5</h3>
+                <img src="img/beef11.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+              <li>
+                <h3>Meet Menu 6</h3>
+                <img src="img/beef-main.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 適当なコンテンツ -->
+        <section class="contents">
+          <div class="container">
+            <h2>Side Menu</h2>
+            <ul class="contents_list">
+              <li>
+                <h3>Side Menu 1</h3>
+                <img src="img/beef-pai.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+              <li>
+                <h3>Side Menu 2</h3>
+                <img src="img/beef-pasta.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+              <li>
+                <h3>Side Menu 3</h3>
+                <img src="img/beef-saide.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 適当なコンテンツ -->
+        <section class="contents">
+          <div class="container">
+            <h2>Side Menu</h2>
+            <ul class="contents_list">
+              <li>
+                <h3>Side Menu 4</h3>
+                <img src="img/beef-side2.jpg" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quisquam exercitationem iste dicta, deserunt porro eum
+                  similique nihil debitis ab ad temporibus numquam molestiae
+                  commodi esse nemo accusamus quos rerum. Adipisci?
+                </p>
+              </li>
+              <li>
+                <h3>Side Menu 5</h3>
+                <img src="" alt="no image" />
+                <p></p>
+              </li>
+              <li>
+                <h3>Side Menu 6</h3>
+                <img src="" alt="no image" />
+                <p></p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <!-- フッター -->
+      <footer>
+        copyright &copy; 2019 xxx All Rights Reserved.
+      </footer>
+
+      <!-- トップに戻るボタン -->
+      <div id="totop" class="totop">
+        TOP
+      </div>
+    </div>
+  </body>
+</html>
